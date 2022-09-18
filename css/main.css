@@ -12,7 +12,6 @@
 }
 
 .section {
-  max-width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
   margin-left: auto;
@@ -267,6 +266,7 @@
 }
 
 .main {
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-main.jpg);
