@@ -15,8 +15,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body class="body-site">
@@ -24,7 +27,7 @@
       <!--Навігація сайту-->
       <div class="container header__content">
         <nav class="nav">
-          <a class="link logo" href="./index.html" rel="noopener nofollow noreferrer"
+          <a class="link logo header__logo" href="./index.html" rel="noopener nofollow noreferrer"
             >Web<span class="header__logo-color">Studio</span></a
           >
           <ul class="list nav__list">
@@ -561,28 +564,48 @@
           <strong class="site-socials__title">Приєднуйтесь</strong>
           <ul class="list site-socials__list">
             <li class="item site-socials__item">
-              <a class="link site-socials__link" href="" target="_blank" rel="noopener nofollow noreferrer">
+              <a
+                class="link site-socials__link"
+                href=""
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+              >
                 <svg class="icon site-socials__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="item site-socials__item">
-              <a class="link site-socials__link" href="" target="_blank" rel="noopener nofollow noreferrer">
+              <a
+                class="link site-socials__link"
+                href=""
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+              >
                 <svg class="icon site-socials__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="item site-socials__item">
-              <a class="link site-socials__link" href="" target="_blank" rel="noopener nofollow noreferrer">
+              <a
+                class="link site-socials__link"
+                href=""
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+              >
                 <svg class="icon site-socials__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="item site-socials__item">
-              <a class="link site-socials__link" href="" target="_blank" rel="noopener nofollow noreferrer">
+              <a
+                class="link site-socials__link"
+                href=""
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+              >
                 <svg class="icon site-socials__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -592,7 +615,7 @@
         </div>
         <form class="form-subscribe">
           <label class="form-subscribe__label">
-            <strong class="form-subscribe__text">Підпишіться на розсилку</strong>
+            <strong class="form-subscribe__title">Підпишіться на розсилку</strong>
             <input class="form-subscribe__field" type="email" name="email" placeholder="E-mail" />
           </label>
           <button class="button form-subscribe__button" type="submit">
@@ -610,24 +633,34 @@
       <div class="modal">
         <form class="modal-form">
           <strong class="modal-form__title">Залиште свої дані, ми вам передзвонимо</strong>
-          <label class="modal-form__register">
-            <span class="modal-form__text">Ім'я</span>
-            <input class="field modal-form__field-name" type="text" name="name" placeholder=" " />
+          <label class="modal-form__label modal-form__label-name">
+            <span class="modal-form__text-name">Ім'я</span>
+            <input
+              class="modal-form__field modal-form__field-name"
+              type="text"
+              name="name"
+              placeholder=" "
+            />
             <svg class="icon modal-form__icon" width="18px" height="18px">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </label>
-          <label class="modal-form__register">
-            <span class="modal-form__text">Телефон</span>
-            <input class="field modal-form__field-tel" type="tel" name="tel" placeholder=" " />
+          <label class="modal-form__label modal-form__label-tel">
+            <span class="modal-form__text-tel">Телефон</span>
+            <input
+              class="modal-form__field modal-form__field-tel"
+              type="tel"
+              name="tel"
+              placeholder=" "
+            />
             <svg class="icon modal-form__icon" width="18px" height="18px">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </label>
-          <label class="modal-form__register">
-            <span class="modal-form__text"><span lang="en">Email</span></span>
+          <label class="modal-form__label modal-form__label-email">
+            <span class="modal-form__text-email"><span lang="en">Email</span></span>
             <input
-              class="field modal-form__field-email"
+              class="modal-form__field modal-form__field-email"
               type="email"
               name="email"
               placeholder=" "
@@ -636,23 +669,33 @@
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </label>
-          <label class="modal-form__register modal-form__register--comment">
-            <span class="modal-form__text">Коментар</span>
+          <label class="modal-form__label modal-form__label-comment">
+            <span class="modal-form__text-comment">Коментар</span>
             <textarea
-              class="field modal-form__field-comment"
+              class="modal-form__field modal-form__field-comment"
               name="feedback"
               rows="5"
               placeholder="Введіть текст"
             ></textarea>
           </label>
-          <label class="modal-form__register modal-form__register--checkbox">
-            <input class="modal-form__field-mark" type="checkbox" name="checkbox_terms" />
-            <svg class="icon modal-form__icon-mark" width="16px" height="15px">
+          <label class="modal-form__label modal-form__label-checkbox">
+            <input
+              class="modal-form__field modal-form__field-checkbox"
+              type="checkbox"
+              name="checkbox_terms"
+            />
+            <svg class="icon modal-form__icon--mark" width="16px" height="15px">
               <use href="./images/icons.svg#icon-check"></use>
             </svg>
-            <span class="modal-form__text--mark"
+            <span class="modal-form__text-checkbox"
               >Погоджуюся з розсилкою та приймаю
-              <a class="link link-terms" href="" target="_blank" rel="noopener nofollow noreferrer">Умови договору</a>
+              <a
+                class="link modal-form__link-terms"
+                href=""
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >Умови договору</a
+              >
             </span>
           </label>
           <button class="button modal-form__button" type="submit">Відправити</button>
