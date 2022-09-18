@@ -190,7 +190,6 @@
 }
 
 .header {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #ECECEC;
@@ -463,7 +462,6 @@
 }
 
 .footer {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
